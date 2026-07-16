@@ -1,0 +1,90 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    editor:
+      preview: false
+    files:
+      - file: "data/settings.json"
+        label: "Site Settings"
+        name: "site_settings"
+        fields:
+          - { label: "Brand Name", name: "brandName", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Hero Description", name: "heroDescription", widget: "text" }
+          - { label: "Contact Email", name: "contactEmail", widget: "string" }
+          - { label: "WhatsApp Number", name: "whatsapp", widget: "string", required: false, hint: "e.g. +86 138 0000 0000" }
+          - { label: "Company Name", name: "companyName", widget: "string" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Founded Year", name: "foundedYear", widget: "string" }
+          - { label: "Years Experience", name: "yearsExperience", widget: "string" }
+          - { label: "Product Models Count", name: "productModels", widget: "string" }
+          - { label: "Countries Served", name: "countriesServed", widget: "string" }
+          - { label: "Response Rate (%)", name: "responseRate", widget: "string" }
+          - { label: "Response Time (hours)", name: "responseTime", widget: "string" }
+          - { label: "Warranty", name: "warranty", widget: "string" }
+
+  - name: "products"
+    label: "Products"
+    editor:
+      preview: false
+    files:
+      - file: "data/products.json"
+        label: "Products"
+        name: "products_list"
+        fields:
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            fields:
+              - { label: "Model", name: "model", widget: "string" }
+              - { label: "Product Name", name: "name", widget: "string" }
+              - { label: "Specifications", name: "specs", widget: "list", default: [] }
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "MOQ", name: "moq", widget: "string" }
+              - { label: "Image", name: "image", widget: "image", required: false }
+
+  - name: "content"
+    label: "Page Content"
+    editor:
+      preview: false
+    files:
+      - file: "data/content.json"
+        label: "Website Content"
+        name: "site_content"
+        fields:
+          - label: "About"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Lead Text", name: "lead", widget: "text" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Highlights", name: "highlights", widget: "list" }
+          - label: "Product Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "select", options: ["lifepo4", "liion", "leadacid"] }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Specs", name: "specs", widget: "list" }
+          - label: "Features"
+            name: "features"
+            widget: "list"
+            fields:
+              - { label: "Number/Text", name: "number", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+          - label: "Certifications"
+            name: "certifications"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }

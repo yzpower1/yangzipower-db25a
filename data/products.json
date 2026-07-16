@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "model": "YZ600 Series",
+      "name": "YZ600 12V 20A Smart Battery Charger - High Current Aluminum EV Charger for RV, Boat, and Electric Cars",
+      "specs": [
+        "12V/14.5V",
+        "20A",
+        "Aluminum Alloy"
+      ],
+      "price": "$35.75-$40",
+      "moq": "1 pc",
+      "image": "images/uploads/yz-600.jpg"
+    },
+    {
+      "model": "YZ270 Series",
+      "name": "YZ270 24V 7A LiFePO4 Battery Charger - Compact Fast Charger for Electric Scooters and Wheelchairs",
+      "specs": [
+        "24V/29.2V",
+        "7A",
+        "Fireproof Shell"
+      ],
+      "price": "$18-$23",
+      "moq": "2 pcs",
+      "image": "images/uploads/yz-270.jpg"
+    },
+    {
+      "model": "YZ300 Series",
+      "name": "YZ300 48V 5A Lithium-ion Battery Charger - 54.6V/58.8V Smart Charger for E-bikes and E-Scooters",
+      "specs": [
+        "48V/54.6V",
+        "5A",
+        "Active Cooling"
+      ],
+      "price": "$26-$30",
+      "moq": "2 pcs",
+      "image": "images/uploads/yz-300.jpg"
+    },
+    {
+      "model": "YZ800 Series",
+      "name": "YZ800 24V 25A High Power LiFePO4 Charger - 730W Industrial Grade Fast Charger for Golf Carts and AGV",
+      "specs": [
+        "24V/29.2V",
+        "25A",
+        "730W Output"
+      ],
+      "price": "$65-$68",
+      "moq": "1 pc",
+      "image": "images/uploads/yz-800.jpg"
+    },
+    {
+      "model": "YZ500 Series",
+      "name": "YZ500 3.6V 20A Single Cell LiFePO4 Charger - Professional Grade Cell Balancer for DIY Battery Packs",
+      "specs": [
+        "3.2V/3.65V",
+        "20A",
+        "Cell Balancer"
+      ],
+      "price": "$32.53",
+      "moq": "1 pc",
+      "image": "images/uploads/yz-500.jpg"
+    },
+    {
+      "model": "YZ800S Series",
+      "name": "YZ800S 24V 30A Smart Charger with LCD Display - Heavy Duty LiFePO4/Lithium Charger for Industrial EV",
+      "specs": [
+        "24V/29.2V",
+        "30A",
+        "LCD Display"
+      ],
+      "price": "$85-$95",
+      "moq": "1 pc",
+      "image": "images/uploads/yz-800s.jpg"
+    },
+    {
+      "model": "YZ100/130 Series",
+      "name": "YZ100 24V 2A Portable Battery Charger - Ultra-Lightweight ABS Charger for Wheelchairs and Mobility Scooters",
+      "specs": [
+        "24V/25.2V",
+        "2A",
+        "ABS/PC Case"
+      ],
+      "price": "$10.40-$12.80",
+      "moq": "1 pc",
+      "image": "images/uploads/yz-100.jpg"
+    },
+    {
+      "model": "YZ600 High Voltage",
+      "name": "YZ600 60V 7A Aluminum Battery Charger - 72.5V Fast Charger for 60V Electric Motorcycles and EV Scooters",
+      "specs": [
+        "60V/72.5V",
+        "7A",
+        "High Efficiency"
+      ],
+      "price": "$40-$45",
+      "moq": "2 pcs",
+      "image": "images/uploads/yz-600-hv.jpg"
+    }
+  ]
+}
