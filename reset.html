@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Reset - Yangzi Power</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <h1>Initializing Password Reset...</h1>
+  <p>Please wait a few seconds. If the dialog doesn't appear, click the button below.</p>
+  <button onclick="netlifyIdentity.open('recovery')">Force Open Reset Dialog</button>
+  <script>
+    netlifyIdentity.on("init", () => {
+      if (window.location.hash.includes("recovery_token")) {
+        netlifyIdentity.open("recovery");
+      }
+    });
+    // 强力兜底
+    setTimeout(() => {
+      if (window.location.hash.includes("recovery_token")) {
+        netlifyIdentity.open("recovery");
+      }
+    }, 2000);
+  </script>
+</body>
+</html>
