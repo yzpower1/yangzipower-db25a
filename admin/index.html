@@ -10,8 +10,16 @@
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   <script>
     if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", function(user) {
-        if (!user) { window.netlifyIdentity.on("login", function() { document.location.href = "/admin/"; }); }
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+        // 强制检测 recovery_token 并开启对话框
+        if (window.location.hash.includes("recovery_token")) {
+          window.netlifyIdentity.open("recovery");
+        }
       });
     }
   </script>
