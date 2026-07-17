@@ -1,7 +1,6 @@
 site_url: https://yangzipower.com
 backend:
-  name: github
-  repo: yzpower1/yangzipower
+  name: git-gateway
   branch: main
 
 media_folder: "images/uploads"

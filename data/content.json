@@ -12,6 +12,23 @@
       "2-Year Quality Warranty"
     ]
   },
+  "why_choose_us": {
+    "title": "Uncompromising Quality & Innovation",
+    "points": [
+      {
+        "title": "Advanced R&D Lab",
+        "desc": "In-house engineering team focused on high-efficiency power conversion and smart charging algorithms."
+      },
+      {
+        "title": "100% Burn-in Test",
+        "desc": "Every single charger undergoes full-load aging tests for 4+ hours before leaving the factory."
+      },
+      {
+        "title": "Global Safety Certifications",
+        "desc": "Full compliance with international standards ensuring safe operation in any market."
+      }
+    ]
+  },
   "categories": [
     {
       "name": "LiFePO4 Chargers",
