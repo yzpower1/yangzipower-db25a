@@ -4,33 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Content Manager — Yangzi Power</title>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-    // 强制检测 recovery_token 并开启对话框（循环重试逻辑）
-    if (window.location.hash.includes("recovery_token")) {
-      let count = 0;
-      const forceOpen = () => {
-        if (window.netlifyIdentity) {
-          window.netlifyIdentity.open("recovery");
-        } else if (count < 100) {
-          count++;
-          setTimeout(forceOpen, 200);
-        }
-      };
-      forceOpen();
-    }
-  </script>
 </body>
 </html>
